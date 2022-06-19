@@ -1,0 +1,168 @@
+:root {
+    --color-page-bg: rgb(252, 252, 252);
+    --color-transparent: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color-page-bg);
+    overflow-x: hidden;
+}
+
+input, textarea {
+    display: block;
+    padding: 10px 10px;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(215, 129, 255);
+    border: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-transparent);
+    margin: 1rem 0;
+}
+
+.logo-wrapper {
+    width: 40px;
+    height: 40px;
+    padding-left: 1rem;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+    width: 33%;
+}
+
+ul .nav-link {
+    margin: 1rem;
+}
+
+ul .nav-link a{
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+ul .nav-link a:focus,
+ul .nav-link a:hover
+{
+    outline: invert;
+    border-bottom: 1px solid #000;
+    transition: all .1s;
+}
+
+section#about,
+section#develop,
+section#design,
+section#contact
+{
+    margin: 0 auto;
+    height: 100vh;
+    width: 90%;
+}
+
+section#contact {
+    height: 80vh;
+}
+
+
+.section-title {
+    box-sizing: border-box;
+    font-size: 3rem;
+}
+
+.section-title::before {
+    content:  '\00a0';
+    background-image: url('images/purple_rectangle.svg');
+  background-size: 40px 20px;
+    position: relative;
+    top: -60px;
+    left: 2%;
+}
+
+.title-right {
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile p {
+    width: 50%;
+}
+
+.profile-img {
+    display: block;
+}
+
+.full-banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-banner .svg-text {
+    margin-left: -15%;
+}
+
+.code-projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.card {
+    width: 33%;
+}
+
+section#contact h4 {
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
+
+.contact-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.contact-form .btn {
+    margin-top: 1rem;
+    align-self: flex-end;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem .5rem;
+}
